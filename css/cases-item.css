@@ -1,0 +1,139 @@
+.welcome{
+  margin-top: 34px;
+}
+.welcome__title {
+  margin: 0px 0 30px;
+}
+.welcome__subtitle {
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 120%; /* 28.8px */
+  max-width: 770px;
+}
+.welcome__text {
+  color: var(--grey, #696a82);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 120%; /* 16.8px */
+
+  margin: 22px 0 60px;
+}
+
+.welcome__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 120px;
+}
+
+.welcome__bottom-list {
+  display: flex;
+  gap: 44px;
+  align-items: center;
+}
+
+.welcome__bottom-item {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.welcome__bottom-title {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 120%; /* 43.2px */
+}
+
+.welcome__bottom-text {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 120%; /* 19.2px */
+}
+.welcome__btns {
+  margin-bottom: 0px;
+}
+
+.welcome__content-img{
+  height: 448px;
+}
+
+.case {
+  margin-bottom: 140px;
+}
+
+.case__text {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 120%; /* 19.2px */
+  margin-bottom: 20px;
+}
+
+.case__list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin: 30px 0px 50px;
+}
+
+.case__item {
+  position: relative;
+  width: 100%;
+}
+
+@media(max-width: 1400px){
+  .welcome__content-img{
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .welcome__content-img{
+    height: 204px;
+  }
+  .welcome__case-img {
+    width: 88.983px;
+    height: 31.815px;
+    object-fit: unset;
+  }
+  .welcome__title {
+    margin: 13px 0 24px;
+  }
+  .welcome__subtitle {
+    font-size: 16px;
+    margin-bottom: 32px;
+  }
+  .welcome__bottom-list {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 26px;
+  }
+  .welcome__bottom {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 32px;
+    margin-bottom: 60px;
+  }
+  .welcome__bottom-title{
+    font-size: 26px;
+  }
+  .welcome__btns{
+    width: 100%;
+  }
+  .welcome__bottom-text{
+    font-size: 16px;
+  }
+  .case{
+    position: relative;
+    margin-bottom: 80px;
+  }
+  .case__text:last-of-type{
+    margin-bottom: 44px;
+  }
+  .swiper-pagination.mod.case{
+    bottom: 150px !important;
+  }
+  .case .welcome__btns{
+    margin-top: 81px;
+  }
+}

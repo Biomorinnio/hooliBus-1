@@ -1,0 +1,170 @@
+.welcome{
+    margin-top: 50px;
+}
+
+.clothes-item .welcome{
+    margin-bottom: 0px;
+}
+.clothes-item .categories{
+    padding-top: 140px;
+}
+
+.welcome .categories__inner{
+    flex-direction: row;
+    margin-bottom: 44px;
+}
+
+.faq{
+    background: #fff;
+    padding: 80px 0px;
+}
+
+.welcome .categories__descr{
+    max-width: 510px;
+}
+
+
+.categories__inner{
+    flex-direction: row-reverse;
+    align-items: flex-start;
+}
+.categoroies__descr-text{
+    margin: 20px 0 40px;
+}
+.categories__list{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 38px;
+}
+.categories__item{
+    position: relative;
+}
+.categories__item-text{
+z-index: 2;
+position: relative;
+font-size: 24px;
+font-weight: 600;
+line-height: 120%; /* 28.8px */
+}
+.categories__item .etc__link{
+    position: absolute;
+    top: -10px;
+    right: -40px;
+
+    font-size: 16px;
+    padding: 4px 10px;
+}
+
+.mod__img{
+    height: 380px;
+    width: 100%;
+}
+.swiper-mod{
+    overflow: hidden;
+}
+.swiper-mod .swiper-slide{
+    position: relative;
+}
+.mod__article{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    width: calc(100% - 20px);
+    border-radius: 2px;
+background: var(--white, #FFF);
+padding: 20px;
+}
+.mod__article-text{
+
+font-size: 18px;
+font-weight: 600;
+line-height: 140%; /* 25.2px */
+}
+
+.swiper-button-prev.mod{
+    margin-left: -50px;
+    margin-top: -95px;
+}
+.swiper-button-next.mod{
+    margin-right: -50px;
+    margin-top: -95px;
+}
+.color__form{
+    margin-top: 50px;
+}
+
+@media(max-width: 768px){
+    .welcome .categories__inner{
+        flex-direction: column;
+    }
+    .categories__list{
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+    }
+   
+    .categories__item .etc__link{
+        position: unset;
+        margin-left: 45px;
+        display: block;
+        margin-top: -37px;
+        margin-bottom: 37px;
+        max-width: 59px;
+        text-align: center;
+    }
+    .categories__descr-title{
+        margin-bottom: 22px;
+    }
+    .categories__content-img{
+        display: none;
+    }
+    .categories__content{
+        width: 100%;
+    }
+    .categories__btns{
+        width: 100%;
+    }
+    .categories__inner{
+        flex-direction: column;
+    }
+    .swiper-mod{
+        padding-left: 10px;
+    }
+    .swiper-mod .swiper-slide:last-child{
+        padding-right: 10px;
+    }
+    .swiper-mod .swiper-slide:last-child .mod__article{
+        width: calc(100% - 30px);
+    }
+   .mod__inner{
+    padding-left: 0;
+    padding-right: 0;
+   }
+   .mod__inner .color__form{
+    margin-right: 10px;
+   }
+   .swiper-pagination.mod{
+    bottom: 294px !important;
+    padding: 0;
+    margin: 0;
+   }
+   .swiper-button-next.mod{
+    margin-right: 0px;
+    margin-top: -196px;
+   }
+   .swiper-button-prev.mod{
+    margin-left: 0px;
+    margin-top: -196px;
+   }
+   .color__form{
+    margin-top: 75px;
+   }
+   .clothes-item .categories{
+    padding-top: 80px;
+   }
+   .welcome .categories__inner{
+    margin-bottom: 0px;
+   }
+   .faq{
+    padding: 60px 0;
+   }
+}

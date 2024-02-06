@@ -1,0 +1,1027 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Hooli Business - уникальный мерч для вашей команды"
+    />
+
+    <meta
+      name="keywords"
+      content="Hooli, Business, мерч, одежда, уникальность"
+    />
+
+    <title>Hooli Business</title>
+
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link href="fonts/Gilroy/stylesheet.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/clothes-item.css">
+    <link rel="stylesheet" href="css/cases-item.css">
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+  </head>
+  <body >
+
+    <div id="shadow">
+
+    </div>
+
+    <div id="overlay">
+      <div id="popup">
+        <form action="" class="popup__form">
+          <img class="popup__form-img" src="img/close__form.svg" alt="иконка закрыть форму">
+          <h3 class="popup__form-title">
+            Нужно рассчитать заказ?
+          </h3>
+          <h5 class="popup__form-subtitle">
+            Оставьте свои данные, мы с вами свяжемся :)
+          </h5>
+          <label for="form__name"></label>
+          <input type="text" name="form__name" class="popup__form-input" placeholder="Имя">
+          <label for="form__tel"></label>
+          <input type="tel"  name="phone" placeholder="+7" class="popup__form-input phone-mask"/>
+          <label for="form__mail"></label>
+          <input type="email" name="form__mail" class="popup__form-input" placeholder="email">
+          
+          <ul class="popup__select-list">
+            <input type="checkbox" class="custom-checkbox" id="col1" checked>
+            <label for="col1">1-10</label>
+            <input type="checkbox" class="custom-checkbox" id="col2" >
+            <label for="col2">11-25</label>
+            <input type="checkbox" class="custom-checkbox" id="col3" >
+            <label for="col3">26-50</label>
+            <input type="checkbox" class="custom-checkbox" id="col4" >
+            <label for="col4">51-100</label>
+            <input type="checkbox" class="custom-checkbox" id="col5" >
+            <label for="col5">101-200</label>
+            <input type="checkbox" class="custom-checkbox" id="col6" >
+            <label for="col6">501-1000</label>
+            <input type="checkbox" class="custom-checkbox" id="col7" >
+            <label for="col7">1000-2000</label>
+            <input type="checkbox" class="custom-checkbox" id="col8" >
+            <label for="col8">2000+</label>
+          </ul>
+
+          <button class="popup__form-btn">
+            Отправить
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M14.4297 5.93005L20.4997 12.0001L14.4297 18.0701" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M3.5 12H20.33" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+              
+          </button>
+        </form>
+      </div>
+    </div>
+    <div id="overlay-request">
+      <div id="popup-request">
+        Спасибо большое!
+      </div>
+    </div>
+
+    <header class="header">
+      <div class="container header__inner">
+          <a href="index.html" class="logo" href="index.html">Hooli Business</a>
+          <img class="header__burger mobile" src="img/burger.svg" alt="бургер меню">
+          <nav class="header__nav none">
+            <ul class="header__list">
+              <li class="header__item">
+                <a href="#categories" class="header__link">Каталог</a>
+              </li>
+              <li class="header__item">
+                <img
+                  src="img/nav__crumbs.svg"
+                  alt="навигационные хлебные крошки"
+                />
+              </li>
+              <li class="header__item">
+                <a href="#cases" class="header__link">Кейсы</a>
+              </li>
+              <li class="header__item">
+                <img
+                  src="img/nav__crumbs.svg"
+                  alt="навигационные хлебные крошки"
+                />
+              </li>
+              <li class="header__item">
+                <a href="#footer" class="header__link">Контакты</a>
+              </li>
+              <li class="header__item">
+                <img
+                  src="img/nav__crumbs.svg"
+                  alt="навигационные хлебные крошки"
+                />
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__link popup__btn">Рассчитать заказ</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="header__soc-list none">
+            <li class="header__soc-item">
+              <a href="#" class="header__soc-link">
+                <img
+                  src="img/telegram.svg"
+                  alt="телеграм"
+                  class="header__soc-icon"
+                />
+              </a>
+            </li>
+            <li class="header__soc-item">
+              <a href="#" class="header__soc-link">
+                <img
+                  src="img/whatsapp.svg"
+                  alt="whatsapp"
+                  class="header__soc-icon"
+                />
+              </a>
+            </li>
+            <li class="header__soc-item">
+              <a href="#" class="header__soc-link">
+                <img src="img/gmail.svg" alt="почта" class="header__soc-icon" />
+              </a>
+            </li>
+          </ul>
+          
+      </div>
+      <menu class="header__menu mobile">
+        <div class="header__menu-block">
+          <a href="index.html" class="logo" href="index.html">Hooli Business</a>
+          <img src="img/close.svg" class="header__menu-close" alt="крест закрыть меню">
+        </div>
+        <nav class="header__nav">
+          <ul class="header__list">
+            <li class="header__item">
+              <a href="index.html#categories" class="header__link">Каталог</a>
+            </li>
+            <li class="header__item">
+              <img
+                src="img/nav__crumbs.svg"
+                alt="навигационные хлебные крошки"
+              />
+            </li>
+            <li class="header__item">
+              <a href="#cases" class="header__link">Кейсы</a>
+            </li>
+            <li class="header__item">
+              <img
+                src="img/nav__crumbs.svg"
+                alt="навигационные хлебные крошки"
+              />
+            </li>
+            <li class="header__item">
+              <a href="#footer" class="header__link">Контакты</a>
+            </li>
+            <li class="header__item">
+              <img
+                src="img/nav__crumbs.svg"
+                alt="навигационные хлебные крошки"
+              />
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link popup__btn">Рассчитать заказ</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__menu-bottom">
+
+          <ul class="header__soc-list">
+            <li class="header__soc-item">
+              <a href="#" class="header__soc-link">
+                <img
+                  src="img/telegram.svg"
+                  alt="телеграм"
+                  class="header__soc-icon"
+                />
+              </a>
+            </li>
+            <li class="header__soc-item">
+              <a href="#" class="header__soc-link">
+                <img
+                  src="img/whatsapp.svg"
+                  alt="whatsapp"
+                  class="header__soc-icon"
+                />
+              </a>
+            </li>
+            <li class="header__soc-item">
+              <a href="#" class="header__soc-link">
+                <img src="img/gmail.svg" alt="почта" class="header__soc-icon" />
+              </a>
+            </li>
+          </ul>
+          <button class="welcome__btn popup__btn">
+            Рассчитать заказ
+            <img src="img/arrow__right.svg" alt="стрелка рассчитать заказ">
+          </button>
+        </div>
+      </menu>
+    </header>
+    <header class="header fixed">
+      <div class="container header__inner">
+          <a href="index.html" class="logo">Hooli Business</a>
+          <img class="header__burger mobile" src="img/burger.svg" alt="бургер меню">
+          <nav class="header__nav none">
+            <ul class="header__list">
+              <li class="header__item">
+                <a href="#categories" class="header__link">Каталог</a>
+              </li>
+              <li class="header__item">
+                <img
+                  src="img/nav__crumbs.svg"
+                  alt="навигационные хлебные крошки"
+                />
+              </li>
+              <li class="header__item">
+                <a href="#cases" class="header__link">Кейсы</a>
+              </li>
+              <li class="header__item">
+                <img
+                  src="img/nav__crumbs.svg"
+                  alt="навигационные хлебные крошки"
+                />
+              </li>
+              <li class="header__item">
+                <a href="#footer" class="header__link">Контакты</a>
+              </li>
+              <li class="header__item">
+                <img
+                  src="img/nav__crumbs.svg"
+                  alt="навигационные хлебные крошки"
+                />
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__link popup__btn">Рассчитать заказ</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="header__soc-list none">
+            <li class="header__soc-item">
+              <a href="https://t.me/polinazimnukhova" class="header__soc-link">
+                <img
+                  src="img/telegram.svg"
+                  alt="телеграм"
+                  class="header__soc-icon"
+                />
+              </a>
+            </li>
+            <li class="header__soc-item">
+              <a href="https://t.me/polinazimnukhova" class="header__soc-link">
+                <img
+                  src="img/whatsapp.svg"
+                  alt="whatsapp"
+                  class="header__soc-icon"
+                />
+              </a>
+            </li>
+            <li class="header__soc-item">
+              <a href="https://t.me/polinazimnukhova" class="header__soc-link">
+                <img src="img/gmail.svg" alt="почта" class="header__soc-icon" />
+              </a>
+            </li>
+          </ul>
+          
+      </div>
+      <menu class="header__menu mobile">
+        <div class="header__menu-block">
+          <a href="index.html" class="logo">Hooli Business</a>
+          <img src="img/close.svg" class="header__menu-close" alt="крест закрыть меню">
+        </div>
+        <nav class="header__nav">
+          <ul class="header__list">
+            <li class="header__item">
+              <a href="#categories" class="header__link">Каталог</a>
+            </li>
+            <li class="header__item">
+              <img
+                src="img/nav__crumbs.svg"
+                alt="навигационные хлебные крошки"
+              />
+            </li>
+            <li class="header__item">
+              <a href="#cases" class="header__link">Кейсы</a>
+            </li>
+            <li class="header__item">
+              <img
+                src="img/nav__crumbs.svg"
+                alt="навигационные хлебные крошки"
+              />
+            </li>
+            <li class="header__item">
+              <a href="#footer" class="header__link">Контакты</a>
+            </li>
+            <li class="header__item">
+              <img
+                src="img/nav__crumbs.svg"
+                alt="навигационные хлебные крошки"
+              />
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link popup__btn">Рассчитать заказ</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__menu-bottom">
+
+          <ul class="header__soc-list">
+            <li class="header__soc-item">
+              <a href="https://t.me/polinazimnukhova" class="header__soc-link">
+                <img
+                  src="img/telegram.svg"
+                  alt="телеграм"
+                  class="header__soc-icon"
+                />
+              </a>
+            </li>
+            <li class="header__soc-item">
+              <a href="https://t.me/polinazimnukhova" class="header__soc-link">
+                <img
+                  src="img/whatsapp.svg"
+                  alt="whatsapp"
+                  class="header__soc-icon"
+                />
+              </a>
+            </li>
+            <li class="header__soc-item">
+              <a href="https://t.me/polinazimnukhova" class="header__soc-link">
+                <img src="img/gmail.svg" alt="почта" class="header__soc-icon" />
+              </a>
+            </li>
+          </ul>
+          <button class="welcome__btn popup__btn">
+            Рассчитать заказ
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M14.4297 5.93005L20.4997 12.0001L14.4297 18.0701" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M3.5 12H20.33" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+              
+          </button>
+        </div>
+      </menu>
+    </header>
+
+    <main class="main cases-item">
+
+      <section class="breadcrumbs">
+        <div class="container breadcrumbs__inner">
+            <span class="breacrumbs__text">
+              <a href="index.html" class="breadcrumbs__link">
+                Главная
+              </a>
+            </span>
+            <span class="breacrumbs__text">/</span>
+            <span class="breacrumbs__text active">Длинное название кейса</span>
+        </div>
+      </section>
+
+      <section class="welcome">
+        <div class="container">
+            <img src="img/avito.svg" alt="авито картинка" class="welcome__case-img">
+            <h1 class="welcome__title">Длинное название кейса</h1>
+            <h3 class="welcome__subtitle">
+                “Отшиваем каждое изделие сами поштучно с контролем качества. Зачастую  отшивают  каждое изделие сами поштучно”
+            </h3>
+            <p class="welcome__text none">
+                Марина Матвеева, руководитель Авито
+            </p>
+            <div class="welcome__bottom">
+                <ul class="welcome__bottom-list">
+                    <li class="welcome__bottom-item">
+                        <span class="welcome__bottom-title">
+                            
+                            12 дней
+                        </span>
+                        <p class="welcome__bottom-text">
+                            Срок изготовления
+                        </p>
+                    </li>
+                    <li class="welcome__bottom-item">
+                        <span class="welcome__bottom-title">
+                            
+                            32
+                        </span>
+                        <p class="welcome__bottom-text">
+                            Изделия
+                        </p>
+                    </li>
+                    <li class="welcome__bottom-item">
+                        <span class="welcome__bottom-title">
+                            
+                            234
+                        </span>
+                        <p class="welcome__bottom-text">
+                            Срок изготовления
+                        </p>
+                    </li>
+                </ul>
+                <div class="welcome__btns">
+                    <button class="welcome__btn popup__btn">
+                      Рассчитать заказ
+                      <img src="img/arrow__right.svg" alt="стрелка рассчитать заказ">
+                    </button>
+                    <button class="welcome__btn white">
+                      Написать
+                      <a href="https://t.me/polinazimnukhova" class="welcome__btn-link">
+        
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M12.001 2.00024C6.48098 2.00024 2.00098 6.48024 2.00098 12.0002C2.00098 17.5202 6.48098 22.0002 12.001 22.0002C17.521 22.0002 22.001 17.5202 22.001 12.0002C22.001 6.48024 17.521 2.00024 12.001 2.00024ZM16.641 8.80024C16.491 10.3802 15.841 14.2202 15.511 15.9902C15.371 16.7402 15.091 16.9902 14.831 17.0202C14.251 17.0702 13.811 16.6402 13.251 16.2702C12.371 15.6902 11.871 15.3302 11.021 14.7702C10.031 14.1202 10.671 13.7602 11.241 13.1802C11.391 13.0302 13.951 10.7002 14.001 10.4902C14.0079 10.4584 14.007 10.4254 13.9983 10.394C13.9896 10.3627 13.9733 10.3339 13.951 10.3102C13.891 10.2602 13.811 10.2802 13.741 10.2902C13.651 10.3102 12.251 11.2402 9.52098 13.0802C9.12098 13.3502 8.76098 13.4902 8.44098 13.4802C8.08098 13.4702 7.40098 13.2802 6.89098 13.1102C6.26098 12.9102 5.77098 12.8002 5.81098 12.4502C5.83098 12.2702 6.08098 12.0902 6.55098 11.9002C9.47098 10.6302 11.411 9.79024 12.381 9.39024C15.161 8.23024 15.731 8.03024 16.111 8.03024C16.191 8.03024 16.381 8.05024 16.501 8.15024C16.601 8.23024 16.631 8.34024 16.641 8.42024C16.631 8.48024 16.651 8.66024 16.641 8.80024Z" fill="#120E0E"/>
+                        </svg>      
+                      </a>
+                      <a href="https://t.me/polinazimnukhova" class="welcome__btn-link">
+        
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M12.001 2.00024C17.524 2.00024 22.001 6.47724 22.001 12.0002C22.001 17.5232 17.524 22.0002 12.001 22.0002C10.2338 22.0031 8.49765 21.5354 6.97099 20.6452L2.00499 22.0002L3.35699 17.0322C2.46608 15.5051 1.99804 13.7682 2.00099 12.0002C2.00099 6.47724 6.47799 2.00024 12.001 2.00024ZM8.59299 7.30024L8.39299 7.30824C8.26351 7.31613 8.13697 7.35015 8.02099 7.40824C7.91251 7.46967 7.81349 7.54647 7.72699 7.63624C7.60699 7.74924 7.53899 7.84724 7.46599 7.94224C7.09611 8.42315 6.89696 9.01356 6.89999 9.62024C6.90199 10.1102 7.02999 10.5872 7.22999 11.0332C7.63899 11.9352 8.31199 12.8902 9.19999 13.7752C9.41399 13.9882 9.62399 14.2022 9.84999 14.4012C10.9534 15.3727 12.2682 16.0733 13.69 16.4472L14.258 16.5342C14.443 16.5442 14.628 16.5302 14.814 16.5212C15.1052 16.5062 15.3896 16.4274 15.647 16.2902C15.7779 16.2228 15.9057 16.1494 16.03 16.0702C16.03 16.0702 16.073 16.0422 16.155 15.9802C16.29 15.8802 16.373 15.8092 16.485 15.6922C16.568 15.6062 16.64 15.5052 16.695 15.3902C16.773 15.2272 16.851 14.9162 16.883 14.6572C16.907 14.4592 16.9 14.3512 16.897 14.2842C16.893 14.1772 16.804 14.0662 16.707 14.0192L16.125 13.7582C16.125 13.7582 15.255 13.3792 14.723 13.1372C14.6673 13.1129 14.6077 13.099 14.547 13.0962C14.4786 13.0892 14.4094 13.0969 14.3442 13.1188C14.279 13.1407 14.2193 13.1763 14.169 13.2232C14.164 13.2212 14.097 13.2782 13.374 14.1542C13.3325 14.21 13.2753 14.2521 13.2098 14.2753C13.1443 14.2985 13.0733 14.3016 13.006 14.2842C12.9408 14.2668 12.877 14.2447 12.815 14.2182C12.691 14.1662 12.648 14.1462 12.563 14.1102C11.9891 13.8598 11.4577 13.5214 10.988 13.1072C10.862 12.9972 10.745 12.8772 10.625 12.7612C10.2316 12.3845 9.88871 11.9583 9.60499 11.4932L9.54599 11.3982C9.50361 11.3344 9.46935 11.2655 9.44399 11.1932C9.40599 11.0462 9.50499 10.9282 9.50499 10.9282C9.50499 10.9282 9.74799 10.6622 9.86099 10.5182C9.97099 10.3782 10.064 10.2422 10.124 10.1452C10.242 9.95524 10.279 9.76024 10.217 9.60924C9.93699 8.92524 9.64699 8.24424 9.34899 7.56824C9.28999 7.43424 9.11499 7.33824 8.95599 7.31924C8.90199 7.31324 8.84799 7.30724 8.79399 7.30324C8.6597 7.29657 8.52513 7.29791 8.39099 7.30724L8.59199 7.29924L8.59299 7.30024Z" fill="#120E0E"/>
+                        </svg>      
+                      </a>
+                   
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="welcome__content none">
+          <div class="swiper-welcome none">
+       
+            <div class="swiper-wrapper">
+             
+              <div class="swiper-slide">
+                <img src="img/example-1.webp" alt="примеры мерча" class="welcome__content-img">
+              </div>
+              <div class="swiper-slide">
+                <img src="img/example-2.webp" alt="примеры мерча" class="welcome__content-img">
+              </div>
+              <div class="swiper-slide">
+                <img src="img/example-3.webp" alt="примеры мерча" class="welcome__content-img">
+              </div>
+              <div class="swiper-slide">
+                <img src="img/example-4.webp" alt="примеры мерча" class="welcome__content-img">
+              </div>
+              <div class="swiper-slide">
+                <img src="img/example-5.webp" alt="примеры мерча" class="welcome__content-img">
+              </div>
+             
+           
+            
+          
+            </div>
+        </div>  
+        <div class="welcome__content1 none">
+          <img src="img/example-1.webp" alt="примеры мерча" class="welcome__content-img">
+          <img src="img/example-2.webp" alt="примеры мерча" class="welcome__content-img">
+        </div>  
+        <div class="welcome__content none">
+          <div class="swiper-welcome none">
+       
+            <div class="swiper-wrapper">
+             
+              <div class="swiper-slide">
+                <img src="img/example-1.webp" alt="примеры мерча" class="welcome__content-img">
+              </div>
+              <div class="swiper-slide">
+                <img src="img/example-2.webp" alt="примеры мерча" class="welcome__content-img">
+              </div>
+              <div class="swiper-slide">
+                <img src="img/example-3.webp" alt="примеры мерча" class="welcome__content-img">
+              </div>
+              <div class="swiper-slide">
+                <img src="img/example-4.webp" alt="примеры мерча" class="welcome__content-img">
+              </div>
+              <div class="swiper-slide">
+                <img src="img/example-5.webp" alt="примеры мерча" class="welcome__content-img">
+              </div>
+             
+           
+            
+          
+            </div>
+          </div>  
+        <div class="swiper-welcome mobile">
+  
+          <div class="swiper-wrapper">
+     
+            <div class="swiper-slide">
+              <img src="img/example-1.webp" alt="примеры мерча" class="welcome__content-img">
+            </div>
+            <div class="swiper-slide">
+              <img src="img/example-2.webp" alt="примеры мерча" class="welcome__content-img">
+            </div>
+            <div class="swiper-slide">
+              <img src="img/example-3.webp" alt="примеры мерча" class="welcome__content-img">
+            </div>
+            <div class="swiper-slide">
+              <img src="img/example-4.webp" alt="примеры мерча" class="welcome__content-img">
+            </div>
+            <div class="swiper-slide">
+              <img src="img/example-5.webp" alt="примеры мерча" class="welcome__content-img">
+            </div>
+
+          </div>
+     
+        </div>
+      </section>
+
+      <section class="case">
+        <div class="container">
+            <p class="case__text">
+                Отшиваем каждое изделие сами поштучно с контролем качества. Зачастую  отшивают  каждое изделие сами поштучно с к
+            </p>
+            <p class="case__text">
+                Отшиваем каждое изделие сами поштучно с контролем качества. Зачастую  отшивают  каждое изделие сами поштучно с контролем. онтролем. Закупают готовые изделия (чаще в Киргизии и Китае) и на наносят на них принты или - этот вариант только если. Отшиваем каждое изделие сами поштучно с контролем качества. Зачастую  отшивают  каждое изделие сами поштучно с контролем. онтролем. 
+            </p>
+            <p class="case__text">
+                Отшиваем каждое изделие сами поштучно с контролем качества. Зачастую  отшивают  каждое изделие сами поштучно с контролем. онтролем. Отшиваем каждое изделие сами поштучно с контролем качества. Зачастую  отшивают  каждое изделие сами поштучно с контролем. онтролем. 
+            </p>
+            <ul class="case__list none">
+                <li class="case__item">
+                    <img src="img/mod-1.jpg" alt="модификации картинка в слайдере" class="mod__img">
+                    <article class="mod__article">
+                        <span class="mod__article-text">Футер 2-х нитка петля без начеса</span>
+                    </article>
+                </li>
+                <li class="case__item">
+                    <img src="img/example-3.webp" alt="модификации картинка в слайдере" class="mod__img">
+                    <article class="mod__article">
+                        <span class="mod__article-text">Футер 2-х нитка петля без начеса</span>
+                    </article>
+                </li>
+                <li class="case__item">
+                    <img src="img/mod-1.jpg" alt="модификации картинка в слайдере" class="mod__img">
+                    <article class="mod__article">
+                        <span class="mod__article-text">Футер 2-х нитка петля без начеса</span>
+                    </article>
+                </li>
+                <li class="case__item">
+                    <img src="img/example-2.webp" alt="модификации картинка в слайдере" class="mod__img">
+                    <article class="mod__article">
+                        <span class="mod__article-text">Футер 2-х нитка петля без начеса</span>
+                    </article>
+                </li>
+              </ul>
+            </div>
+            <div class="swiper-mod mobile">
+              <div class="swiper-wrapper">
+    
+                <div class="swiper-slide">
+                  <img src="img/mod-1.jpg" alt="модификации картинка в слайдере" class="mod__img">
+                  <article class="mod__article">
+                      <span class="mod__article-text">Футер 2-х нитка петля без начеса</span>
+                  </article>
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/example-3.webp" alt="модификации картинка в слайдере" class="mod__img">
+                  <article class="mod__article">
+                      <span class="mod__article-text">Футер 2-х нитка петля без начеса</span>
+                  </article>
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/mod-1.jpg" alt="модификации картинка в слайдере" class="mod__img">
+                  <article class="mod__article">
+                      <span class="mod__article-text">Футер 2-х нитка петля без начеса</span>
+                  </article>
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/example-2.webp" alt="модификации картинка в слайдере" class="mod__img">
+                  <article class="mod__article">
+                      <span class="mod__article-text">Футер 2-х нитка петля без начеса</span>
+                  </article>
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/mod-1.jpg" alt="модификации картинка в слайдере" class="mod__img">
+                  <article class="mod__article">
+                      <span class="mod__article-text">Футер 2-х нитка петля без начеса</span>
+                  </article>
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/example-3.webp" alt="модификации картинка в слайдере" class="mod__img">
+                  <article class="mod__article">
+                      <span class="mod__article-text">Футер 2-х нитка петля без начеса</span>
+                  </article>
+                </div>
+          
+         
+             
+            </div>
+
+
+            </div>
+            <div class="swiper-pagination mod case mobile"></div>
+            <div class="container">
+
+              <div class="welcome__btns">
+                  <button class="welcome__btn popup__btn">
+                    Рассчитать заказ
+                    <img src="img/arrow__right.svg" alt="стрелка рассчитать заказ">
+                  </button>
+                  <button class="welcome__btn white">
+                    Написать
+                    <a href="https://t.me/polinazimnukhova" class="welcome__btn-link">
+      
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.001 2.00024C6.48098 2.00024 2.00098 6.48024 2.00098 12.0002C2.00098 17.5202 6.48098 22.0002 12.001 22.0002C17.521 22.0002 22.001 17.5202 22.001 12.0002C22.001 6.48024 17.521 2.00024 12.001 2.00024ZM16.641 8.80024C16.491 10.3802 15.841 14.2202 15.511 15.9902C15.371 16.7402 15.091 16.9902 14.831 17.0202C14.251 17.0702 13.811 16.6402 13.251 16.2702C12.371 15.6902 11.871 15.3302 11.021 14.7702C10.031 14.1202 10.671 13.7602 11.241 13.1802C11.391 13.0302 13.951 10.7002 14.001 10.4902C14.0079 10.4584 14.007 10.4254 13.9983 10.394C13.9896 10.3627 13.9733 10.3339 13.951 10.3102C13.891 10.2602 13.811 10.2802 13.741 10.2902C13.651 10.3102 12.251 11.2402 9.52098 13.0802C9.12098 13.3502 8.76098 13.4902 8.44098 13.4802C8.08098 13.4702 7.40098 13.2802 6.89098 13.1102C6.26098 12.9102 5.77098 12.8002 5.81098 12.4502C5.83098 12.2702 6.08098 12.0902 6.55098 11.9002C9.47098 10.6302 11.411 9.79024 12.381 9.39024C15.161 8.23024 15.731 8.03024 16.111 8.03024C16.191 8.03024 16.381 8.05024 16.501 8.15024C16.601 8.23024 16.631 8.34024 16.641 8.42024C16.631 8.48024 16.651 8.66024 16.641 8.80024Z" fill="#120E0E"/>
+                      </svg>      
+                    </a>
+                    <a href="https://t.me/polinazimnukhova" class="welcome__btn-link">
+      
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.001 2.00024C17.524 2.00024 22.001 6.47724 22.001 12.0002C22.001 17.5232 17.524 22.0002 12.001 22.0002C10.2338 22.0031 8.49765 21.5354 6.97099 20.6452L2.00499 22.0002L3.35699 17.0322C2.46608 15.5051 1.99804 13.7682 2.00099 12.0002C2.00099 6.47724 6.47799 2.00024 12.001 2.00024ZM8.59299 7.30024L8.39299 7.30824C8.26351 7.31613 8.13697 7.35015 8.02099 7.40824C7.91251 7.46967 7.81349 7.54647 7.72699 7.63624C7.60699 7.74924 7.53899 7.84724 7.46599 7.94224C7.09611 8.42315 6.89696 9.01356 6.89999 9.62024C6.90199 10.1102 7.02999 10.5872 7.22999 11.0332C7.63899 11.9352 8.31199 12.8902 9.19999 13.7752C9.41399 13.9882 9.62399 14.2022 9.84999 14.4012C10.9534 15.3727 12.2682 16.0733 13.69 16.4472L14.258 16.5342C14.443 16.5442 14.628 16.5302 14.814 16.5212C15.1052 16.5062 15.3896 16.4274 15.647 16.2902C15.7779 16.2228 15.9057 16.1494 16.03 16.0702C16.03 16.0702 16.073 16.0422 16.155 15.9802C16.29 15.8802 16.373 15.8092 16.485 15.6922C16.568 15.6062 16.64 15.5052 16.695 15.3902C16.773 15.2272 16.851 14.9162 16.883 14.6572C16.907 14.4592 16.9 14.3512 16.897 14.2842C16.893 14.1772 16.804 14.0662 16.707 14.0192L16.125 13.7582C16.125 13.7582 15.255 13.3792 14.723 13.1372C14.6673 13.1129 14.6077 13.099 14.547 13.0962C14.4786 13.0892 14.4094 13.0969 14.3442 13.1188C14.279 13.1407 14.2193 13.1763 14.169 13.2232C14.164 13.2212 14.097 13.2782 13.374 14.1542C13.3325 14.21 13.2753 14.2521 13.2098 14.2753C13.1443 14.2985 13.0733 14.3016 13.006 14.2842C12.9408 14.2668 12.877 14.2447 12.815 14.2182C12.691 14.1662 12.648 14.1462 12.563 14.1102C11.9891 13.8598 11.4577 13.5214 10.988 13.1072C10.862 12.9972 10.745 12.8772 10.625 12.7612C10.2316 12.3845 9.88871 11.9583 9.60499 11.4932L9.54599 11.3982C9.50361 11.3344 9.46935 11.2655 9.44399 11.1932C9.40599 11.0462 9.50499 10.9282 9.50499 10.9282C9.50499 10.9282 9.74799 10.6622 9.86099 10.5182C9.97099 10.3782 10.064 10.2422 10.124 10.1452C10.242 9.95524 10.279 9.76024 10.217 9.60924C9.93699 8.92524 9.64699 8.24424 9.34899 7.56824C9.28999 7.43424 9.11499 7.33824 8.95599 7.31924C8.90199 7.31324 8.84799 7.30724 8.79399 7.30324C8.6597 7.29657 8.52513 7.29791 8.39099 7.30724L8.59199 7.29924L8.59299 7.30024Z" fill="#120E0E"/>
+                      </svg>      
+                    </a>
+                 
+                  </button>
+              </div>
+            </div>
+      </section>
+     
+
+      <section class="cases" id="cases">
+        <div class="container cases__inner">
+          <h2 class="cases__title">Другие кейсы</h2>
+          <div class="swiper-buttons mobile">
+            <div class="swiper-button-prev cases">
+              <img src="img/arrow-slider-next.svg" alt="кнопка слайдера - предыдущий слайд">
+            </div>
+            <div class="swiper-button-next cases">
+              <img src="img/arrow-slider-next.svg" alt="кнопка слайдера - следующий слайд">
+            </div>
+          </div>
+        </div>
+        <hr/>
+        <div class="swiper-cases mobile">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <li class="cases__item">
+                <a href="cases-item.html" class="cases__item-link">
+                <img src="img/accordion-1.webp" alt="примеры, кейсы бренда, мерча" class="cases__item-img">
+                <img src="img/cases__arrow.svg" alt="" class="cases__link-img">
+                <a href="cases-item.html" class="etc__link">320</a>
+                  <div class="cases__item-box">
+                    <a href="cases-item.html" class="cases__box-link">
+                    <article class="cases__item-article">
+                      <span class="cases__item-title">Название единицы кейса</span>
+                      <p class="cases__item-text">Небольшое описание кейса</p>
+                    </article>
+                  </a>
+                  </div>
+                
+                </a>
+              </li>
+            </div>
+            <div class="swiper-slide">
+              <li class="cases__item">
+                <a href="cases-item.html" class="cases__item-link">
+                <img src="img/cases-2.webp" alt="примеры, кейсы бренда, мерча" class="cases__item-img">
+                <img src="img/cases__arrow.svg" alt="" class="cases__link-img">
+                <a href="cases-item.html" class="etc__link">320</a>
+                  <div class="cases__item-box">
+                    <a href="cases-item.html" class="cases__box-link">
+                    <article class="cases__item-article">
+                      <span class="cases__item-title">Название единицы кейса</span>
+                      <p class="cases__item-text">Небольшое описание кейса</p>
+                    </article>
+    
+                    </a>
+                  </div>
+                </a>
+              </li>
+            </div>
+            <div class="swiper-slide">
+              <li class="cases__item">
+                <a href="cases-item.html" class="cases__item-link">
+                <img src="img/cases-3.webp" alt="примеры, кейсы бренда, мерча" class="cases__item-img">
+                <img src="img/cases__arrow.svg" alt="" class="cases__link-img">
+                <a href="cases-item.html" class="etc__link">320</a>
+                  <div class="cases__item-box">
+                    <a href="cases-item.html" class="cases__box-link">
+                    <article class="cases__item-article">
+                      <span class="cases__item-title">Название единицы кейса</span>
+                      <p class="cases__item-text">Небольшое описание кейса</p>
+                    </article>
+                    
+                    </a>
+                  </div>
+                </a>
+              </li>
+            </div>
+            <div class="swiper-slide">
+              <li class="cases__item">
+                <a href="cases-item.html" class="cases__item-link">
+                <img src="img/cases-4.webp" alt="примеры, кейсы бренда, мерча" class="cases__item-img">
+                <img src="img/cases__arrow.svg" alt="" class="cases__link-img">
+                <a href="cases-item.html" class="etc__link">320</a>
+                  <div class="cases__item-box">
+                    <a href="cases-item.html" class="cases__box-link">
+                    <article class="cases__item-article">
+                      <span class="cases__item-title">Название единицы кейса</span>
+                      <p class="cases__item-text">Небольшое описание кейса</p>
+                    </article>
+              
+                    </a>
+                  </div>
+                </a>
+              </li>
+            </div>
+            <div class="swiper-slide">
+              <li class="cases__item">
+                <a href="cases-item.html" class="cases__item-link">
+                <img src="img/accordion-1.webp" alt="примеры, кейсы бренда, мерча" class="cases__item-img">
+                <img src="img/cases__arrow.svg" alt="" class="cases__link-img">
+                <a href="cases-item.html" class="etc__link">320</a>
+                  <div class="cases__item-box">
+                    <a href="cases-item.html" class="cases__box-link">
+                    <article class="cases__item-article">
+                      <span class="cases__item-title">Название единицы кейса</span>
+                      <p class="cases__item-text">Небольшое описание кейса</p>
+                    </article>
+                  
+                    </a>
+                  </div>
+                </a>
+              </li>
+            </div>
+            <div class="swiper-slide">
+              <li class="cases__item">
+                <a href="cases-item.html" class="cases__item-link">
+                <img src="img/accordion-1.webp" alt="примеры, кейсы бренда, мерча" class="cases__item-img">
+                <img src="img/cases__arrow.svg" alt="" class="cases__link-img">
+                <a href="cases-item.html" class="etc__link">320</a>
+                  <div class="cases__item-box">
+                    <a href="cases-item.html" class="cases__box-link">
+                    <article class="cases__item-article">
+                      <span class="cases__item-title">Название единицы кейса</span>
+                      <p class="cases__item-text">Небольшое описание кейса</p>
+                    </article>
+                      
+                    </a>
+                  </div>
+                </a>
+              </li>
+            </div>
+            
+         
+          </div>
+         
+        </div>
+        <div class="container none">
+          <ul class="cases__list">
+            <li class="cases__item">
+              <a href="cases-item.html" class="cases__item-link">
+              <img src="img/accordion-1.webp" alt="примеры, кейсы бренда, мерча" class="cases__item-img">
+              <a href="cases-item.html" class="etc__link">320</a>
+                <div class="cases__item-box">
+                  <a href="cases-item.html" class="cases__box-link">
+                  <article class="cases__item-article">
+                    <span class="cases__item-title">Название единицы кейса</span>
+                    <p class="cases__item-text">Небольшое описание кейса</p>
+                  </article>
+                    <img src="img/cases__arrow.svg" alt="">
+                  </a>
+                </div>
+              </a>
+            </li>
+            <li class="cases__item">
+              <a href="cases-item.html" class="cases__item-link">
+              <img src="img/cases-2.webp" alt="примеры, кейсы бренда, мерча" class="cases__item-img">
+              <a href="cases-item.html" class="etc__link">320</a>
+                <div class="cases__item-box">
+                  <a href="cases-item.html" class="cases__box-link">
+                  <article class="cases__item-article">
+                    <span class="cases__item-title">Название единицы кейса</span>
+                    <p class="cases__item-text">Небольшое описание кейса</p>
+                  </article>
+                    <img src="img/cases__arrow.svg" alt="">
+                  </a>
+                </div>
+              </a>
+            </li>
+            <li class="cases__item">
+              <a href="cases-item.html" class="cases__item-link">
+              <img src="img/cases-3.webp" alt="примеры, кейсы бренда, мерча" class="cases__item-img">
+              <a href="cases-item.html" class="etc__link">320</a>
+                <div class="cases__item-box">
+                  <a href="cases-item.html" class="cases__box-link">
+                  <article class="cases__item-article">
+                    <span class="cases__item-title">Название единицы кейса</span>
+                    <p class="cases__item-text">Небольшое описание кейса</p>
+                  </article>
+                    <img src="img/cases__arrow.svg" alt="">
+                  </a>
+                </div>
+              </a>
+            </li>
+            <li class="cases__item">
+              <a href="cases-item.html" class="cases__item-link">
+              <img src="img/cases-4.webp" alt="примеры, кейсы бренда, мерча" class="cases__item-img">
+              <a href="cases-item.html" class="etc__link">320</a>
+                <div class="cases__item-box">
+                  <a href="cases-item.html" class="cases__box-link">
+                  <article class="cases__item-article">
+                    <span class="cases__item-title">Название единицы кейса</span>
+                    <p class="cases__item-text">Небольшое описание кейса</p>
+                  </article>
+                    <img src="img/cases__arrow.svg" alt="">
+                  </a>
+                </div>
+              </a>
+            </li>
+            <li class="cases__item">
+              <a href="cases-item.html" class="cases__item-link">
+              <img src="img/accordion-1.webp" alt="примеры, кейсы бренда, мерча" class="cases__item-img">
+              <a href="cases-item.html" class="etc__link">320</a>
+                <div class="cases__item-box">
+                  <a href="cases-item.html" class="cases__box-link">
+                  <article class="cases__item-article">
+                    <span class="cases__item-title">Название единицы кейса</span>
+                    <p class="cases__item-text">Небольшое описание кейса</p>
+                  </article>
+                    <img src="img/cases__arrow.svg" alt="">
+                  </a>
+                </div>
+              </a>
+            </li>
+            <li class="cases__item">
+              <a href="cases-item.html" class="cases__item-link">
+              <img src="img/accordion-1.webp" alt="примеры, кейсы бренда, мерча" class="cases__item-img">
+              <a href="cases-item.html" class="etc__link">320</a>
+                <div class="cases__item-box">
+                  <a href="cases-item.html" class="cases__box-link">
+                  <article class="cases__item-article">
+                    <span class="cases__item-title">Название единицы кейса</span>
+                    <p class="cases__item-text">Небольшое описание кейса</p>
+                  </article>
+                    <img src="img/cases__arrow.svg" alt="">
+                  </a>
+                </div>
+              </a>
+            </li>
+           
+          </ul>
+          <button class="cases__btn popup__btn">
+            Рассчитать заказ
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M14.4297 5.93005L20.4997 12.0001L14.4297 18.0701" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M3.5 12H20.33" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+              
+          </button>
+        </div>
+      </section>
+  
+      <!-- <section class="feedback">
+        
+        <div class="container manufacture__inner">
+          <h2 class="feedback__title">
+            Отзывы
+          </h2>
+          <div class="swiper-buttons">
+            <div class="swiper-button-prev feedback">
+              <img src="img/arrow-slider-next.svg" alt="кнопка слайдера - предыдущий слайд">
+            </div>
+            <div class="swiper-button-next feedback">
+              <img src="img/arrow-slider-next.svg" alt="кнопка слайдера - следующий слайд">
+            </div>
+          </div>
+        </div>
+        <hr/>
+        <div class="container container-mobile">
+          <div class="swiper-feedback">
+            
+            <div class="swiper-wrapper">
+
+              <div class="swiper-slide">
+                <img src="img/video__play-black.svg" alt="" class="swiper-slide-icon">
+                <video src="video/video-feedback.mp4" class="swiper-slide__video" controls></video>
+              </div>
+              <div class="swiper-slide">
+                <img src="img/video__play-black.svg" alt="" class="swiper-slide-icon">
+                <video src="video/video-feedback.mp4" class="swiper-slide__video" controls></video>
+              </div>
+              <div class="swiper-slide">
+                <img src="img/video__play-black.svg" alt="" class="swiper-slide-icon">
+                <video src="video/video-feedback.mp4" class="swiper-slide__video" controls></video>
+              </div>
+              <div class="swiper-slide">
+                <img src="img/video__play-black.svg" alt="" class="swiper-slide-icon">
+                <video src="video/video-feedback.mp4" class="swiper-slide__video" controls></video>
+              </div>
+                            
+            </div>
+           
+            <div class="swiper-pagination"></div>
+
+          </div>
+        </div>
+      </section> -->
+
+    </main>
+
+    <footer class="footer" id="footer">
+      <div class="container">
+        <h2 class="footer__title">Корпоративный мерч для вас</h2>
+      </div>
+      <hr/>
+      <div class="container">
+        <ul class="footer__info-list">
+          <li class="footer__info-item">
+            <address class="footer__info-title">Москва, ул. Демидова, 17</address>
+            <p class="footer__item-text">Адрес</p>
+          </li>
+          <li class="footer__info-item">
+            <a href="tel:+72992333432" class="footer__info-title">+7 (299) 233 - 34 - 32 </a>
+            <p class="footer__item-text">Телефон</p>
+          </li>
+          <li class="footer__info-item">
+            <a href="mailto:example@gmail.com" class="footer__info-title">example@gmail.com </a>
+            <p class="footer__item-text">Имейл</p>
+          </li>
+        </ul>
+        <ul class="footer__soc-list">
+          <li class="footer__soc-item">
+            <div class="footer__item-icons">
+              <a href="#" class="footer__item-link">
+                
+                <img src="img/telegram-yellow.svg" alt="телеграм">
+              </a>
+              <a href="#" class="footer__item-link">
+                
+                <img src="img/whatsapp-yellow.svg" alt="whatsapp">
+              </a>
+              <a href="#" class="footer__item-link">
+                
+                <img src="img/instagram.svg" alt="инстаграм">
+              </a>
+            </div>
+            <span class="footer__info-title">Соцсети</span>
+          </li>
+          <li class="footer__soc-item">
+            <a href="#" class="footer__item-link">
+                
+              <img src="img/telegram-yellow.svg" alt="телеграм">
+            </a>
+            <span class="footer__info-title">Написать в Telegram</span>
+          </li>
+          <li class="footer__soc-item">
+            <a href="#" class="footer__item-link">
+              
+              <img src="img/whatsapp-yellow.svg" alt="whatsapp">
+            </a>
+            <span class="footer__info-title">Написать в WhatsApp</span>
+          </li>
+        </ul>
+        <ul class="footer__rights-list">
+          <li class="footer__rights-item">
+            <p class="footer__item-text">ООО “Швейгрупп”</p>
+            <p class="footer__item-text">ИНН/КПП 919847397392789</p>
+            <p class="footer__item-text">ОГРН 12364773829</p>
+          </li>
+          <li class="footer__rights-item">
+            <p class="footer__item-text">ИП Ларин Владимир Андреевич</p>
+            <p class="footer__item-text">ИНН 34567894567867</p>
+            <p class="footer__item-text">ОГРНИП 12364773829</p>
+          </li>
+        </ul>
+      </div>
+      <hr/>
+      <div class="container footer__inner">
+        <nav class="footer__nav">
+          <ul class="footer__nav-list">
+            <li class="footer__nav-item">
+              <a href="#" class="footer__nav-link">Шоурум</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="#" class="footer__nav-link">Стать партнером</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="#" class="footer__nav-link">Доставка</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="#" class="footer__nav-link">Гарантии качества</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="#" class="footer__nav-link">Политика конфиденциальности</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="footer__reward">
+          <img src="img/footer__icon.svg" alt="" class="footer__reward-img">
+          <p class="footer__reward-text">Лауреат Премии <br/> «Время инноваций»</p>
+        </div>
+      </div>
+    </footer>
+
+
+    <script src="https://unpkg.com/imask"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
