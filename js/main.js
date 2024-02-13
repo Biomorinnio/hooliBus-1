@@ -265,6 +265,14 @@ shadow.addEventListener('click', ()=>{
 
 
 const requestBtn = document.querySelectorAll('.color__form button')
+const popupBtn = document.querySelector('.popup__form-btn')
+
+popupBtn.addEventListener('click', ()=>{
+  popup.classList.remove('active');
+  popupRequest.classList.add('active');
+  shadow.classList.add('active')
+  blockScroll()
+})
 
 for(let i of requestBtn) i.addEventListener('click', ()=>{
   popupRequest.classList.add('active');
